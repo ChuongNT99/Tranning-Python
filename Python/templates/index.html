@@ -4,6 +4,10 @@
     <title>Hello</title>
 </head>
 <body>
+    {% if name %}
     <h1>Hello, {{ username }}!</h1>
+    {% else %}
+    <h1>Hello Friend!</h1>
+    {% endif %}
 </body>
 </html>
