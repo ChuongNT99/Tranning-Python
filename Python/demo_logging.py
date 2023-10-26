@@ -13,6 +13,8 @@ handler = logging.StreamHandler()
 handler.setLevel(logging.DEBUG)
 handler.setFormatter(formatter)
 app.logger.addHandler(handler)
+app.logger.disabled = True
+
 
 @app.route('/')
 def home():
